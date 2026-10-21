@@ -9,7 +9,7 @@ class Ticket(BaseModel):
     title: str
     site: str
     priority: str = "P3"
-
+    severity:  str = "minor"
 
 @app.get("/health")
 def health():
