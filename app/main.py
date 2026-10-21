@@ -8,7 +8,7 @@ tickets: list[dict] = []
 class Ticket(BaseModel):
     title: str
     site: str
-    str = "P3"
+    priority: str = "P3"
 
 
 @app.get("/health")
